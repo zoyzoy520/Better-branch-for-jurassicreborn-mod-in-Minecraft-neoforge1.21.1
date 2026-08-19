@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.144'
+}
+
+base {
+    archivesName = 'jrtameall'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+neoForge {
+    version = '21.1.248'
+
+    runs {
+        client {
+            client()
+        }
+    }
+
+    mods {
+        jr_tame_all {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    // Official repo, reachable through the local proxy configured in gradle.properties.
+    maven { name = 'NeoForged'; url = 'https://maven.neoforged.net/releases' }
+    // Direct-connection fallback mirror (partial cache, China):
+    maven { name = 'NeoForgedMirror'; url = 'https://mirrors4.qlu.edu.cn/bmclapi/' }
+    mavenCentral()
+}
+
+dependencies {
+    // Jurassic Reborn 1.3.44 (closed source, ARR). compileOnly only - nothing is redistributed.
+    compileOnly files('libs/jurassicreborn-1.3.44.jar')
+    // Citadel 2.7.0 (required by Jurassic Reborn at runtime; on the compile classpath for hygiene).
+    compileOnly files('libs/citadel-2.7.0-1.21.1.jar')
+
+    // Mixin annotations for the source (no refmap needed - targets are third-party classes
+    // that NeoForge never remaps). Runtime Mixin 0.8.7 + MixinExtras 0.4.1 are bundled with
+    // NeoForge 21.1; @ModifyReturnValue lives in MixinExtras, not core Mixin.
+    compileOnly 'org.spongepowered:mixin:0.8.7'
+    compileOnly 'io.github.llamalad7:mixinextras-common:0.4.1'
+}

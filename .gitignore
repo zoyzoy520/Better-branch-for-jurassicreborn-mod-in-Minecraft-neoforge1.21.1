@@ -1,0 +1,13 @@
+# Gradle
+.gradle/
+build/
+
+# Dev runtime (game dir with worlds + third-party mod jars)
+run/
+
+# Third-party dependency jars (jurassicreborn-1.3.44.jar, citadel, etc.)
+libs/
+
+# IDE
+.idea/
+*.iml

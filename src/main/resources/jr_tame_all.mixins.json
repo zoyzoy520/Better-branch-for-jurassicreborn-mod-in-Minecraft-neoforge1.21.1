@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.7",
+  "package": "net.example.jrtameall.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DinosaurMixin",
+    "PeaceTargetMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
