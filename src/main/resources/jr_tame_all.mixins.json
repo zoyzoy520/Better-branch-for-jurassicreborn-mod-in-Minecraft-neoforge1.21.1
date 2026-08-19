@@ -15,7 +15,8 @@
     "FossilItemLuckMixin",
     "FossilizedEggItemLuckMixin",
     "PlantFossilItemLuckMixin",
-    "PetrifiedLogLuckMixin"
+    "PetrifiedLogLuckMixin",
+    "TamedMetabolismMixin"
   ],
   "client": [],
   "server": [],
