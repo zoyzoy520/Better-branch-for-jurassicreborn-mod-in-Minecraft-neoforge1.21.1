@@ -4,12 +4,16 @@ license="MIT"
 
 [[mods]]
 modId="jr_tame_all"
-version="1.0.0"
+version="1.1.0"
 displayName="Jurassic Reborn Tame All"
 description='''
 Unlocks the imprinting (taming) system for ALL Jurassic Reborn dinosaur species.
 Every hatched dinosaur imprints on the player who hatches it, and all species defend their owner.
 Sneaking while hatching still skips imprinting.
+Also adds: peace rules (tamed creatures never attack players or other tamed creatures;
+pterosaurs and marine creatures never attack their own kind), a creative-only Taming Stick
+to force-tame wild dinosaurs, 5x fossil grinder speed and success, 10x incubator hatch
+speed and 10x embryonic machine gestation speed.
 '''
 
 [[dependencies.jr_tame_all]]

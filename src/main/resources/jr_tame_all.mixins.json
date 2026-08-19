@@ -5,7 +5,17 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "DinosaurMixin",
-    "PeaceTargetMixin"
+    "PeaceTargetMixin",
+    "MachineAccessors$Grinder",
+    "MachineAccessors$Embryonic",
+    "MachineAccessors$Incubator",
+    "GrinderSpeedMixin",
+    "IncubatorSpeedMixin",
+    "EmbryonicMachineSpeedMixin",
+    "FossilItemLuckMixin",
+    "FossilizedEggItemLuckMixin",
+    "PlantFossilItemLuckMixin",
+    "PetrifiedLogLuckMixin"
   ],
   "client": [],
   "server": [],
