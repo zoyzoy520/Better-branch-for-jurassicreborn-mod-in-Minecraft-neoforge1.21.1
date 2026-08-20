@@ -16,7 +16,12 @@
     "FossilizedEggItemLuckMixin",
     "PlantFossilItemLuckMixin",
     "PetrifiedLogLuckMixin",
-    "TamedMetabolismMixin"
+    "TamedMetabolismMixin",
+    "DinosaurRidingMixin",
+    "DinosaurRidingTravelMixin",
+    "DinosaurRidingStateMixin",
+    "MarineRidingMixin",
+    "FlyingRidingMixin"
   ],
   "client": [],
   "server": [],
