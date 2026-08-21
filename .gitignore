@@ -1,3 +1,6 @@
+# Build artifacts at repo root (old manual builds)
+/*.jar
+
 # Gradle
 .gradle/
 build/

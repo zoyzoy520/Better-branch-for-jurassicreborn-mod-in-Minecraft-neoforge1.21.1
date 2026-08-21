@@ -2,6 +2,8 @@
 
 NeoForge 1.21.1 附加 mod（Mixin 实现）：解锁 [Jurassic Reborn](https://modrinth.com/mod/jurassic-reborn) 1.3.44 中**全部 ~109 个物种**的孵化印随（驯服）系统，并解锁全部物种的主人护卫。不改动原 mod jar，与原 mod 一起放入 mods 文件夹即生效。
 
+> **版权声明**：本 mod 为**非官方**第三方附加 mod，与 Jurassic Reborn Team 无隶属关系。本仓库不包含、不重新分发 Jurassic Reborn 的任何代码或资产（其采用 All Rights Reserved 许可，版权归 Jurassic Reborn Team 所有）；Jurassic Reborn 本体需从官方渠道自行获取。详见 [NOTICE.md](NOTICE.md)。本 mod 自身代码按 [MIT](LICENSE) 许可发布。
+
 ## 工作原理
 
 Jurassic Reborn 自带"孵化印随"驯服系统：孵化蛋右击孵化时（非潜行）`DinosaurEntity.setOwner(player)` 认主，之后可用空手右击打开指令 GUI（游荡/跟随/坐下）。唯一门槛是物种配置类 `Dinosaur.isImprintable()`，约 40 个物种（霸王龙、棘龙、南方巨兽龙等）在构造器中被设为 false。
